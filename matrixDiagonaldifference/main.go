@@ -7,7 +7,7 @@ func main() {
 	//fmt.Println(matrix)
 	var primaryDiagonalSum, secondaryDiagonalSum, Difference int32
 	n := len(matrix)
-	fmt.Println("n Is", n)
+	//fmt.Println("n Is", n)
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
 			if i == j {
@@ -24,7 +24,6 @@ func main() {
 		}
 	}
 
-	fmt.Println(primaryDiagonalSum, secondaryDiagonalSum)
 	Difference = primaryDiagonalSum - secondaryDiagonalSum
 	if Difference < 0 {
 		fmt.Println(-(Difference))
