@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	sticks := []int32{1, 2, 3, 4, 5, 10}
-	triangleArr := [3]int32{}
+	triangleArr := [4]int32{}
 
 	for i := 0; i < len(sticks); i++ {
 		for j := i + 1; j < (len(sticks)); j++ {
@@ -14,9 +14,11 @@ func main() {
 					triangleArr[0] = sticks[i]
 					triangleArr[1] = sticks[j]
 					triangleArr[2] = sticks[k]
+					triangleArr[3] = sticks[i] + sticks[j] + sticks[k]
 					fmt.Println(triangleArr)
-					perimeterSum := triangleArr[0] + triangleArr[1] + triangleArr[2]
-					fmt.Println(perimeterSum)
+
+					// perimeterSum := triangleArr[0] + triangleArr[1] + triangleArr[2]
+					// fmt.Println(perimeterSum)
 
 				}
 			}
