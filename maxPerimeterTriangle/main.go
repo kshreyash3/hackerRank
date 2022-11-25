@@ -32,12 +32,7 @@ func possibleTriangle(arr []int32) [][4]int32 {
 
 	}
 
-	fmt.Println(len(finalArr))
+	//fmt.Println(len(finalArr))
+
 	return finalArr
 }
-
-// func highestPerimeter(arr [][4]int32) [3]int32{
-// 	for i:=0; i<len(arr);i++{
-
-// 	}
-// }
